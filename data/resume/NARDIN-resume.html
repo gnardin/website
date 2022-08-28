@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.16">
+<meta name="generator" content="Asciidoctor 2.0.17">
 <title>Luis Gustavo Nardin</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -193,7 +193,8 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
 details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
 details{margin-left:1.25rem}
-details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;-webkit-tap-highlight-color:transparent}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
 details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
 details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
 details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
@@ -235,9 +236,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{border-right:1px solid;opacity:.35;padding-right:.5em}
-pre.pygments .lineno{border-right:1px solid;opacity:.35;display:inline-block;margin-right:.75em}
-pre.pygments .lineno::before{content:"";margin-right:-.125em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
@@ -274,7 +274,7 @@ table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-c
 table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
 table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
 table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
-table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
 th.halign-center,td.halign-center{text-align:center}
@@ -290,10 +290,11 @@ ol{margin-left:1.75em}
 ul li ol{margin-left:1.5em}
 dl dd{margin-left:1.125em}
 dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
-ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
 ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
 ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
 ul.checklist>li>p:first-child{margin-left:-1em}
 ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
 ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
@@ -336,8 +337,6 @@ sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
 #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
 #footnotes .footnote:last-of-type{margin-bottom:0}
 #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
-.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
-.gist .file-data>table td.line-data{width:99%}
 div.unbreakable{page-break-inside:avoid}
 .big{font-size:larger}
 .small{font-size:smaller}
@@ -657,6 +656,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
+<p>Suchar, V.-A. &amp; <strong>Nardin, L. G.</strong> (2022). Simulation-based assessment of the effectiveness of tests for stationarity. <em>Mathematics and Statistics</em>, 10(3), 670-683. doi: <a href="https://doi.org/10.13189/ms.2022.100324" target="_blank" rel="noopener">10.13189/ms.2022.100324</a>.</p>
+</li>
+<li>
 <p>Devezer, B., <strong>Nardin, L. G.</strong>, Baumgaertner, B., &amp; Buzbas, E. O. (2019). Scientific discovery in a model-centric framework: Reproducibility, innovation, and epistemic diversity. <em>PLOS ONE</em>, 14(5), e0216125. doi: <a href="https://doi.org/10.1371/journal.pone.0216125" target="_blank" rel="noopener">10.1371/journal.pone.0216125</a>.</p>
 </li>
 <li>
@@ -713,34 +715,34 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Duffy, F., Klosek, K. C., <strong>Nardin, L. G.</strong>, &amp; Wagner, G. (2020). Rebel Group Protection Rackets: Simulating the effects of economic support on civil war violence. In E. Deutschmann, J. Lorenz, L.G. Nardin, D. Natalini, &amp; A.F.X. Wilhelm (Eds.), <em>Computational Conflict Research</em> (pp. 225–251). Cham: Springer, Computational Social Sciences Book Series. doi: <a href="https://doi.org/10.1007/978-3-030-29333-8_11" target="_blank" rel="noopener">10.1007/978-3-030-29333-8_11</a></p>
+<p>Duffy, F., Klosek, K. C., <strong>Nardin, L. G.</strong>, &amp; Wagner, G. (2020). Rebel Group Protection Rackets: Simulating the effects of economic support on civil war violence. In E. Deutschmann, J. Lorenz, L.G. Nardin, D. Natalini, &amp; A.F.X. Wilhelm (Eds.), <em>Computational Conflict Research</em> (pp. 225-251). Cham: Springer, Computational Social Sciences Book Series. doi: <a href="https://doi.org/10.1007/978-3-030-29333-8_11" target="_blank" rel="noopener">10.1007/978-3-030-29333-8_11</a></p>
 </li>
 <li>
-<p>Deutschmann, E., Lorenz, J., &amp; <strong>Nardin, L. G.</strong> (2020). Advancing conflict research through computational approaches. In E. Deutschmann, J. Lorenz, L.G. Nardin, D. Natalini, &amp; A.F.X. Wilhelm (Eds.), <em>Computational Conflict Research</em> (pp. 1–19). Cham: Springer, Computational Social Sciences Book Series. doi: <a href="https://doi.org/10.1007/978-3-030-29333-8_1" target="_blank" rel="noopener">10.1007/978-3-030-29333-8_1</a></p>
+<p>Deutschmann, E., Lorenz, J., &amp; <strong>Nardin, L. G.</strong> (2020). Advancing conflict research through computational approaches. In E. Deutschmann, J. Lorenz, L.G. Nardin, D. Natalini, &amp; A.F.X. Wilhelm (Eds.), <em>Computational Conflict Research</em> (pp. 1-19). Cham: Springer, Computational Social Sciences Book Series. doi: <a href="https://doi.org/10.1007/978-3-030-29333-8_1" target="_blank" rel="noopener">10.1007/978-3-030-29333-8_1</a></p>
 </li>
 <li>
-<p>de Lima, I. C. A., <strong>Nardin, L. G.</strong>, &amp; Sichman, J. S. (2019). Gavel: A sanctioning enforcement framework. In D. Weyns, V. Mascardi, &amp; A. Ricci (Eds.), <em>Engineering Multi-Agent Systems</em> (pp. 225–241). Cham: Springer. doi: <a href="https://doi.org/10.1007/978-3-030-25693-7_12" target="_blank" rel="noopener">10.1007/978-3-030-25693-7_12</a></p>
+<p>de Lima, I. C. A., <strong>Nardin, L. G.</strong>, &amp; Sichman, J. S. (2019). Gavel: A sanctioning enforcement framework. In D. Weyns, V. Mascardi, &amp; A. Ricci (Eds.), <em>Engineering Multi-Agent Systems</em> (pp. 225-241). Cham: Springer. doi: <a href="https://doi.org/10.1007/978-3-030-25693-7_12" target="_blank" rel="noopener">10.1007/978-3-030-25693-7_12</a></p>
 </li>
 <li>
-<p>Visser, A., <strong>Nardin, L. G.</strong>, &amp; Castro, S. (2019). Integrating the latest artificial intelligence algorithms into the RoboCup Rescue Simulation framework. In D. Holz, K. Genter, M. Saad, &amp; O. von Stryk (Eds.), <em>RoboCup 2018: Robot World Cup XXII</em> (pp. 476–487). Cham: Springer, LNCS v.11374. doi: <a href="https://doi.org/10.1007/978-3-030-27544-0_39" target="_blank" rel="noopener">10.1007/978-3-030-27544-0_39</a></p>
+<p>Visser, A., <strong>Nardin, L. G.</strong>, &amp; Castro, S. (2019). Integrating the latest artificial intelligence algorithms into the RoboCup Rescue Simulation framework. In D. Holz, K. Genter, M. Saad, &amp; O. von Stryk (Eds.), <em>RoboCup 2018: Robot World Cup XXII</em> (pp. 476-487). Cham: Springer, LNCS v.11374. doi: <a href="https://doi.org/10.1007/978-3-030-27544-0_39" target="_blank" rel="noopener">10.1007/978-3-030-27544-0_39</a></p>
 </li>
 <li>
-<p><strong>Nardin, L. G.</strong>, Andrighetto, G., Székely, Á., Punzo, V., &amp; Conte, R. (2016). An agent-based model of extortion racketeering. In C. Elsenbroich, D. Anzola, &amp; N. Gilbert (Eds.), <em>Social Dimensions of Organised Crime</em> (pp. 105–116). Cham: Springer. doi: <a href="https://doi.org/10.1007/978-3-319-45169-5_7" target="_blank" rel="noopener">10.1007/978-3-319-45169-5_7</a></p>
+<p><strong>Nardin, L. G.</strong>, Andrighetto, G., Székely, Á., Punzo, V., &amp; Conte, R. (2016). An agent-based model of extortion racketeering. In C. Elsenbroich, D. Anzola, &amp; N. Gilbert (Eds.), <em>Social Dimensions of Organised Crime</em> (pp. 105-116). Cham: Springer. doi: <a href="https://doi.org/10.1007/978-3-319-45169-5_7" target="_blank" rel="noopener">10.1007/978-3-319-45169-5_7</a></p>
 </li>
 <li>
-<p>Székely, Á., <strong>Nardin, L. G.</strong>, &amp; Andrighetto, G. (2016). Social norms and extortion rackets. In C. Elsenbroich, D. Anzola, &amp; N. Gilbert (Eds.), <em>Social Dimensions of Organised Crime</em> (pp. 49–64). Cham: Springer. doi: <a href="https://doi.org/10.1007/978-3-319-45169-5_4" target="_blank" rel="noopener">10.1007/978-3-319-45169-5_4</a></p>
+<p>Székely, Á., <strong>Nardin, L. G.</strong>, &amp; Andrighetto, G. (2016). Social norms and extortion rackets. In C. Elsenbroich, D. Anzola, &amp; N. Gilbert (Eds.), <em>Social Dimensions of Organised Crime</em> (pp. 49-64). Cham: Springer. doi: <a href="https://doi.org/10.1007/978-3-319-45169-5_4" target="_blank" rel="noopener">10.1007/978-3-319-45169-5_4</a></p>
 </li>
 <li>
-<p>Troitzsch, K. G., <strong>Nardin, L. G.</strong>, Andrighetto, G., Székely, Á., Punzo, V., Conte, R., &amp; Elsenbroich, C. (2016). Calibration and validation. In C. Elsenbroich, D. Anzola, &amp; N. Gilbert (Eds.), <em>Social Dimensions of Organised Crime</em> (pp. 217–239). Cham: Springer. doi: <a href="https://doi.org/10.1007/978-3-319-45169-5_12" target="_blank" rel="noopener">10.1007/978-3-319-45169-5_12</a></p>
+<p>Troitzsch, K. G., <strong>Nardin, L. G.</strong>, Andrighetto, G., Székely, Á., Punzo, V., Conte, R., &amp; Elsenbroich, C. (2016). Calibration and validation. In C. Elsenbroich, D. Anzola, &amp; N. Gilbert (Eds.), <em>Social Dimensions of Organised Crime</em> (pp. 217-239). Cham: Springer. doi: <a href="https://doi.org/10.1007/978-3-319-45169-5_12" target="_blank" rel="noopener">10.1007/978-3-319-45169-5_12</a></p>
 </li>
 <li>
-<p><strong>Nardin, L. G.</strong>, Andrighetto, G., Székely, Á., &amp; Conte, R. (2016). Modelling extortion racket systems: Preliminary results. In F. Cecconi (Ed.), <em>New Frontiers in the Study of Social Phenomena: Cognition, Complexity, Adaptation</em> (pp. 65–80). Cham: Springer. doi: <a href="https:doi.org/10.1007/978-3-319-23938-5_4" target="_blank" rel="noopener">10.1007/978-3-319-23938-5_4</a></p>
+<p><strong>Nardin, L. G.</strong>, Andrighetto, G., Székely, Á., &amp; Conte, R. (2016). Modelling extortion racket systems: Preliminary results. In F. Cecconi (Ed.), <em>New Frontiers in the Study of Social Phenomena: Cognition, Complexity, Adaptation</em> (pp. 65-80). Cham: Springer. doi: <a href="https:doi.org/10.1007/978-3-319-23938-5_4" target="_blank" rel="noopener">10.1007/978-3-319-23938-5_4</a></p>
 </li>
 <li>
-<p>Nardin, L. G., Rosset, L. M., &amp; Sichman, J. S. (2014). Scale and topology effects on agent-based simulation: A trust-based coalition formation case study. In D. F. Adamatti, G. P. Dimuro, &amp; H. Coelho (Eds.), <em>Interdisciplinary Applications of Agent-Based Social Simulation and Modeling</em> (pp. 36–51). Hershey, PA: IGI Global. doi: <a href="https://doi.org/10.4018/978-1-4666-5954-4.ch003" target="_blank" rel="noopener">10.4018/978-1-4666-5954-4.ch003</a></p>
+<p>Nardin, L. G., Rosset, L. M., &amp; Sichman, J. S. (2014). Scale and topology effects on agent-based simulation: A trust-based coalition formation case study. In D. F. Adamatti, G. P. Dimuro, &amp; H. Coelho (Eds.), <em>Interdisciplinary Applications of Agent-Based Social Simulation and Modeling</em> (pp. 36-51). Hershey, PA: IGI Global. doi: <a href="https://doi.org/10.4018/978-1-4666-5954-4.ch003" target="_blank" rel="noopener">10.4018/978-1-4666-5954-4.ch003</a></p>
 </li>
 <li>
-<p><strong>Nardin, L. G.</strong>, Brandão, A. A. F., Sichman, J. S., &amp; Vercouter, L. (2008). SOARI: A service oriented architecture to support agent reputation models interoperability. In R. Falcone, S. K. Barber, J. Sabater-Mir, &amp; M. P. Singh (Org.), <em>Trust in Agent Societies</em> (pp. 292–307). Berlin, Heidelberg: Springer, LNCS v.5396. doi: <a href="https://doi.org/10.1007/978-3-540-92803-4_15" target="_blank" rel="noopener">10.1007/978-3-540-92803-4_15</a></p>
+<p><strong>Nardin, L. G.</strong>, Brandão, A. A. F., Sichman, J. S., &amp; Vercouter, L. (2008). SOARI: A service oriented architecture to support agent reputation models interoperability. In R. Falcone, S. K. Barber, J. Sabater-Mir, &amp; M. P. Singh (Org.), <em>Trust in Agent Societies</em> (pp. 292-307). Berlin, Heidelberg: Springer, LNCS v.5396. doi: <a href="https://doi.org/10.1007/978-3-540-92803-4_15" target="_blank" rel="noopener">10.1007/978-3-540-92803-4_15</a></p>
 </li>
 </ul>
 </div>
@@ -752,19 +754,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Wagh, V. K., Pathak, P., Stynes, P. &amp; <strong>Nardin, L. G.</strong> (2020). An evacuation route model for disaster affected areas. In <em>Proceedings of the 28th Irish Conference on Artificial Intelligence and Cognitive Science</em> (pp. 61–72). Dublin: CEUR.org, CEUR Workshop Proceedings v.2771</p>
+<p>Wagh, V. K., Pathak, P., Stynes, P. &amp; <strong>Nardin, L. G.</strong> (2020). An evacuation route model for disaster affected areas. In <em>Proceedings of the 28th Irish Conference on Artificial Intelligence and Cognitive Science</em> (pp. 61-72). Dublin: CEUR.org, CEUR Workshop Proceedings v.2771</p>
 </li>
 <li>
-<p>Wagner, G. &amp; <strong>Nardin, L. G.</strong> (2018). Adding agent concepts to object event modeling and simulation. In <em>Proceedings of the 2018 Winter Simulation Conference</em> (pp. 893–904). Pistacaway, NJ: IEEE. doi: <a href="https://doi.org/10.1109/WSC.2018.8632381" target="_blank" rel="noopener">10.1109/WSC.2018.8632381</a></p>
+<p>Wagner, G. &amp; <strong>Nardin, L. G.</strong> (2018). Adding agent concepts to object event modeling and simulation. In <em>Proceedings of the 2018 Winter Simulation Conference</em> (pp. 893-904). Pistacaway, NJ: IEEE. doi: <a href="https://doi.org/10.1109/WSC.2018.8632381" target="_blank" rel="noopener">10.1109/WSC.2018.8632381</a></p>
 </li>
 <li>
 <p>Rosset, L. M., <strong>Nardin, L. G.</strong>, &amp; Sichman, J. S. (2014). Using reputation to improve partner selection in a Smart Grid environment. In <em>Proceedings of the 4th Brazilian Workshop on Social Simulation</em>. São Paulo</p>
 </li>
 <li>
-<p><strong>Nardin, L. G.</strong>, Andrighetto, G., Conte, R., &amp; Paolucci, M. (2014). From anarchy to monopoly: How competition and protection shaped mafia’s behavior. In <em>Advances in Computational Social Science and Social Simulation</em>, Social Simulation Conference 2014 (pp. 444–454). Barcelona: Autònoma University of Barcelona</p>
+<p><strong>Nardin, L. G.</strong>, Andrighetto, G., Conte, R., &amp; Paolucci, M. (2014). From anarchy to monopoly: How competition and protection shaped mafia&#8217;s behavior. In <em>Advances in Computational Social Science and Social Simulation</em>, Social Simulation Conference 2014 (pp. 444-454). Barcelona: Autònoma University of Barcelona</p>
 </li>
 <li>
-<p>Medina, A. C., <strong>Nardin, L. G.</strong>, Pereira, N. N., Botter, R. C., &amp; Sichman, J. S. (2013). A distributed simulation model of the maritime logistics in an iron ore supply chain management. In <em>Proceedings of the 3rd International Conference on Simulation and Modeling Methodologies, Technologies and Applications</em> (pp. 453–460). Reykjavik: SciTePress. doi: <a href="https://doi.org/10.5220/0004488504530460" target="_blank" rel="noopener">10.5220/0004488504530460</a></p>
+<p>Medina, A. C., <strong>Nardin, L. G.</strong>, Pereira, N. N., Botter, R. C., &amp; Sichman, J. S. (2013). A distributed simulation model of the maritime logistics in an iron ore supply chain management. In <em>Proceedings of the 3rd International Conference on Simulation and Modeling Methodologies, Technologies and Applications</em> (pp. 453-460). Reykjavik: SciTePress. doi: <a href="https://doi.org/10.5220/0004488504530460" target="_blank" rel="noopener">10.5220/0004488504530460</a></p>
 </li>
 <li>
 <p>Barroso, A. D., Santana, F. de C., Lassance, V., da Silva, A. B. M., <strong>Nardin, L. G.</strong>, Brandão, A. A. F., &amp; Sichman, J. S. (2013). RoboCup Rescue 2013 LTI Agent Rescue Team Description. In <em>Proceedings of the RoboCup 2013</em>. Eindhoven: RoboCup Federation</p>
@@ -788,13 +790,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Pereira, A. H., <strong>Nardin, L. G.</strong>, Brandão, A. A. F., &amp; Sichman, J. S. (2011). LTI Agent Rescue Team: A BDI-based approach for Robocup Rescue. In <em>Proceedings of the RoboCup 2011</em>. Istanbul: RoboCup Federation</p>
 </li>
 <li>
-<p>Pereira, A. H., <strong>Nardin, L. G.</strong>, &amp; Sichman, J. S. (2011). Coordination of agents in the RoboCup Rescue: A partial global approach. In <em>2011 Workshop and School of Agent Systems, their Environment and Applications</em> (pp. 45–50). Pistacaway, NJ: IEEE. doi: <a href="https://doi.org/10.1109/WESAAC.2011.10" target="_blank" rel="noopener">10.1109/WESAAC.2011.10</a></p>
+<p>Pereira, A. H., <strong>Nardin, L. G.</strong>, &amp; Sichman, J. S. (2011). Coordination of agents in the RoboCup Rescue: A partial global approach. In <em>2011 Workshop and School of Agent Systems, their Environment and Applications</em> (pp. 45-50). Pistacaway, NJ: IEEE. doi: <a href="https://doi.org/10.1109/WESAAC.2011.10" target="_blank" rel="noopener">10.1109/WESAAC.2011.10</a></p>
 </li>
 <li>
-<p><strong>Nardin, L. G.</strong> &amp; Sichman, J. S. (2010). Simulating the impact of trust in coalition formation: A preliminary analysis. In G. P. Dimuro, J. S. Sichman, D. F. Adamatti, P. Tedesco, J. Balsa, &amp; L. Antunes (Org.), <em>2010 Second Brazilian Workshop on Social Simulation</em> (pp. 33–40). Pistacaway, NJ: IEEE. doi: <a href="https://doi.org/10.1109/BWSS.2010.12" target="_blank" rel="noopener">10.1109/BWSS.2010.12</a></p>
+<p><strong>Nardin, L. G.</strong> &amp; Sichman, J. S. (2010). Simulating the impact of trust in coalition formation: A preliminary analysis. In G. P. Dimuro, J. S. Sichman, D. F. Adamatti, P. Tedesco, J. Balsa, &amp; L. Antunes (Org.), <em>2010 Second Brazilian Workshop on Social Simulation</em> (pp. 33-40). Pistacaway, NJ: IEEE. doi: <a href="https://doi.org/10.1109/BWSS.2010.12" target="_blank" rel="noopener">10.1109/BWSS.2010.12</a></p>
 </li>
 <li>
-<p><strong>Nardin, L. G.</strong> &amp; Sichman, J. S. (2010). SOARI: A service-oriented architecture to enable interoperability of agent reputation models. In <em>Anais do 7o. Concurso de Teses e Dissertações em Inteligência Artificial</em> (pp. 299–310). São Bernardo do Campo</p>
+<p><strong>Nardin, L. G.</strong> &amp; Sichman, J. S. (2010). SOARI: A service-oriented architecture to enable interoperability of agent reputation models. In <em>Anais do 7o. Concurso de Teses e Dissertações em Inteligência Artificial</em> (pp. 299-310). São Bernardo do Campo</p>
 </li>
 <li>
 <p><strong>Nardin, L. G.</strong>, Muller, G., Brandão, A. A. F., Vercouter, L., &amp; Sichman, J. S. (2009). Effects of expressiveness and heterogeneity of reputation models in the ART testbed: Some preliminary experiments using the SOARI architecture. In <em>Proceedings of the 12th International Workshop on Trust in Agent Societies</em>. Budapest</p>
@@ -810,13 +812,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="ulist">
 <ul>
 <li>
-<p>Rosset, L. M., <strong>Nardin, L. G.</strong>, &amp; Sichman, J. S. (2013). Use of High Performance computing in agent-based social simulation: A case study on trust-based coalition formation. In <em>Anais do VII Workshop-Escola de Sistemas de Agentes, seus Ambientes e apliCações</em> (pp. 161–163). São Paulo</p>
+<p>Rosset, L. M., <strong>Nardin, L. G.</strong>, &amp; Sichman, J. S. (2013). Use of High Performance computing in agent-based social simulation: A case study on trust-based coalition formation. In <em>Anais do VII Workshop-Escola de Sistemas de Agentes, seus Ambientes e apliCações</em> (pp. 161-163). São Paulo</p>
 </li>
 <li>
-<p>Barroso, A. D., Santana, F. de C., Lassance, V., <strong>Nardin, L. G.</strong>, Brandão, A. A. F., &amp; Sichman, J. S. (2013). Using agent coordination techniques to support rescue operations in urban disaster environments. In <em>Anais do VII Workshop-Escola de Sistemas de Agentes, seus Ambientes e apliCações</em> (pp. 189–191). São Paulo</p>
+<p>Barroso, A. D., Santana, F. de C., Lassance, V., <strong>Nardin, L. G.</strong>, Brandão, A. A. F., &amp; Sichman, J. S. (2013). Using agent coordination techniques to support rescue operations in urban disaster environments. In <em>Anais do VII Workshop-Escola de Sistemas de Agentes, seus Ambientes e apliCações</em> (pp. 189-191). São Paulo</p>
 </li>
 <li>
-<p><strong>Nardin, L. G.</strong>, Brandão, A. A. F., Sichman, J. S., &amp; Vercouter, L. (2008). An ontology mapping service to support agent reputation models interoperability. In <em>Proceedings of the 11th International Workshop on Trust in Agent Societies</em> (pp. 140–144). Estoril</p>
+<p><strong>Nardin, L. G.</strong>, Brandão, A. A. F., Sichman, J. S., &amp; Vercouter, L. (2008). An ontology mapping service to support agent reputation models interoperability. In <em>Proceedings of the 11th International Workshop on Trust in Agent Societies</em> (pp. 140-144). Estoril</p>
 </li>
 </ul>
 </div>
@@ -1131,6 +1133,21 @@ Modelar e simular a rede integrada de portos e a frota de navios próprios e afr
 </colgroup>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2022</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Organizer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Workshop on AI and Simulation for Natural Disaster Management</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2022</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Organizer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RoboCup Rescue Simulation League @RoboCup 2022</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2021</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Organizer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Workshop on AI and Simulation for Natural Disaster Management</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2021</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Keynote Speaker</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bridging the Gap Between Discrete-Event and Agent-Based Simulation @II MSSiS</p></td>
@@ -1331,6 +1348,10 @@ Modelar e simular a rede integrada de portos e a frota de navios próprios e afr
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Italian</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Advanced (Speak, Listen, and Read) and Basic (Write)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">French</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intermediary (Listen and Read) and Basic (Speak and Write)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">German</p></td>
