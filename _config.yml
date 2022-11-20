@@ -1,6 +1,5 @@
 ## Theme
 theme: minimal-mistakes-jekyll
-destination: ./build
 
 ## Defaults
 defaults:
