@@ -1,0 +1,30 @@
+---
+search: false
+---
+        
+@charset "utf-8";
+
+.page__content {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75em;
+}
+
+td {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25em;
+}
+
+.site-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5em;
+}
+
+.toc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.25em;
+}
+
+$footer-background-color: white;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
