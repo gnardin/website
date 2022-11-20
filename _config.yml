@@ -17,7 +17,7 @@ description: ""
 url        : "https://gnardin.github.io"
 baseurl    : ""
 locale     : "en_US"
-breadcrumbs: true
+breadcrumbs: false
 atom_feed:
   hide: true
 
