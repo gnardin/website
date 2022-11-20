@@ -1,6 +1,6 @@
 ## Theme
 theme: minimal-mistakes-jekyll
-#minimal_mistakes_skin: "contrast"
+destination: ./build
 
 ## Defaults
 defaults:
