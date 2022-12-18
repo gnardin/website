@@ -9,8 +9,8 @@ permalink: /publications/
 
 # Theses
 
-| **Nardin, L. G.** (2009). Uma arquitetura de apoio à interoperabilidade de modelos de reputação de agentes. _MSc dissertation_, University of São Paulo, São Paulo, Brazil. | [](../data/theses/nardin2009-dissertation.bib){:class="fas fa-book"} | [](../data/theses/nardin2009-dissertation.pdf){:class="fas fa-file-pdf"} |
 | **Nardin, L. G.** (2015). An adaptive sanctioning enforcement model for normative multiagent systems. _PhD thesis_, University of São Paulo, São Paulo, Brazil. | [](../data/theses/nardin2015-thesis.bib){:class="fas fa-book"} | [](../data/theses/nardin2015-thesis.pdf){:class="fas fa-file-pdf"} |
+| **Nardin, L. G.** (2009). Uma arquitetura de apoio à interoperabilidade de modelos de reputação de agentes. _MSc dissertation_, University of São Paulo, São Paulo, Brazil. | [](../data/theses/nardin2009-dissertation.bib){:class="fas fa-book"} | [](../data/theses/nardin2009-dissertation.pdf){:class="fas fa-file-pdf"} |
 | **Nardin, L. G.** (2005). Uso de sistemas multiagentes em sistemas sensíveis ao contexto. _Software Engineering Specialization monograph_, University of São Paulo, São Paulo, Brazil. | [](../data/theses/nardin2005-monograph.bib){:class="fas fa-book"} | [](../data/theses/nardin2005-monograph.pdf){:class="fas fa-file-pdf"} |
 
 # Books

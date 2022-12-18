@@ -9,5 +9,5 @@ permalink: /teaching/
 
 # Cloud Computing
 
-* [2021](https://gnardin.pages.emse.fr/courses/cloud/2021/index.html){:target="_blank"}
-* [2022](https://ci.mines-stetienne.fr/cps2/course/cloud/index.html){:target="_blank"}
+* [2021](https://cloud-and-edge-infrastructures.pages.emse.fr/2021){:target="_blank"}
+* [2022](https://cloud-and-edge-infrastructures.pages.emse.fr/2022){:target="_blank"}
