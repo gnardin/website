@@ -7,7 +7,7 @@ permalink: /projects/
 
 # Current
 
-* **Normative Artificial Intelligence for regulating MANufacturing (NAIMAN)** (ANR-FAPESP) <br/>
+* **[Normative Artificial Intelligence for regulating MANufacturing](https://naiman.wp.imt.fr){:target="_blank"} (NAIMAN)** (ANR-FAPESP) <br/>
 NAIMAN aims to develop technologies that enable agents to operate in heterogeneous and dynamic industrial settings and reason about normative aspects to enhance flexibility, resilience, trustworthiness, and sustainability of manufacturing systems in the context of the Industry of the Future. NAIMAN will create normative regulation mechanisms, design a regulation architecture and implement a MAS platform, whose applicability will be demonstrated and assessed on various Industry of the Future platforms.
 * **Adaptive Co-Construction of Ethics for LifElong tRrustworthy AI (ACCELER-AI)** (ANR) <br/>
 ACCELER-AI aims to enable the adaptive co-construction of Ethics in and for a long-lived intelligent system addressing diversity and trustworthiness.
