@@ -9,11 +9,11 @@ permalink: /projects/
 
 * **[Normative Artificial Intelligence for regulating MANufacturing](https://naiman.wp.imt.fr){:target="_blank"} (NAIMAN)** (ANR-FAPESP) <br/>
 NAIMAN aims to develop technologies that enable agents to operate in heterogeneous and dynamic industrial settings and reason about normative aspects to enhance flexibility, resilience, trustworthiness, and sustainability of manufacturing systems in the context of the Industry of the Future. NAIMAN will create normative regulation mechanisms, design a regulation architecture and implement a MAS platform, whose applicability will be demonstrated and assessed on various Industry of the Future platforms.
-* **Adaptive Co-Construction of Ethics for LifElong tRrustworthy AI (ACCELER-AI)** (ANR) <br/>
+* **[Adaptive Co-Construction of Ethics for LifElong tRrustworthy AI](https://projet.liris.cnrs.fr/acceler-ai/){:target="_blank"} (ACCELER-AI)** (ANR) <br/>
 ACCELER-AI aims to enable the adaptive co-construction of Ethics in and for a long-lived intelligent system addressing diversity and trustworthiness.
-* **RAMP-UP II** (German-French Academy for the Industry of the Future)  <br/>
+* **RAMP-UP II** (German-French Academy for the Industry of the Future) <br/>
 RAMP-UP II addresses the limitations of state-of-the-art approaches for agile, resilient and sustainable manufacturing and service industries, in particular in uncertain situations such as crisis context. It aims to develop a generic methodology supported by decision-support tools to plan and manage ramp-up and ramp-down projects considering resilience, agility, and sustainability criteria. RAMP-UP II focuses on manufacturing and healthcare services.
-* **[HyperAgents](https://www.hyperagents.org/){:target="_blank"}** (ANR-SNF)  <br/>
+* **[HyperAgents](https://www.hyperagents.org/){:target="_blank"}** (ANR-SNF) <br/>
 The HyperAgents project aims to enable the deployment of world-wide hybrid communities of people and autonomous agents on the Web. For this purpose, HyperAgents defines a new class of multi-agent systems (MAS) that use hypermedia as a general mechanism for uniform interaction.
 * **[RoboCup Rescue Simulation League](https://rescuesim.robocup.org){:target="_blank"}** (RoboCup Federation) <br/>
 The RoboCup Rescue Simulation League is an education and research project that promotes research and development in the socially significant domain of natural disaster. The RoboCup Rescue Simulator aims to realistically represent natural disaster scenarios where response plans can be assessed.
