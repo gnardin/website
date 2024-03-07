@@ -11,15 +11,15 @@ permalink: /projects/
 NAIMAN aims to develop technologies that enable agents to operate in heterogeneous and dynamic industrial settings and reason about normative aspects to enhance flexibility, resilience, trustworthiness, and sustainability of manufacturing systems in the context of the Industry of the Future. NAIMAN will create normative regulation mechanisms, design a regulation architecture and implement a MAS platform, whose applicability will be demonstrated and assessed on various Industry of the Future platforms.
 * **[Adaptive Co-Construction of Ethics for LifElong tRrustworthy AI](https://projet.liris.cnrs.fr/acceler-ai/){:target="_blank"} (ACCELER-AI)** (ANR) <br/>
 ACCELER-AI aims to enable the adaptive co-construction of Ethics in and for a long-lived intelligent system addressing diversity and trustworthiness.
-* **RAMP-UP II** (German-French Academy for the Industry of the Future) <br/>
+
+# Concluded
+
+* **[RAMP-UP II](https://www.future-industry.org/ramp-up-ii/)** (German-French Academy for the Industry of the Future) <br/>
 RAMP-UP II addresses the limitations of state-of-the-art approaches for agile, resilient and sustainable manufacturing and service industries, in particular in uncertain situations such as crisis context. It aims to develop a generic methodology supported by decision-support tools to plan and manage ramp-up and ramp-down projects considering resilience, agility, and sustainability criteria. RAMP-UP II focuses on manufacturing and healthcare services.
 * **[HyperAgents](https://www.hyperagents.org/){:target="_blank"}** (ANR-SNF) <br/>
 The HyperAgents project aims to enable the deployment of world-wide hybrid communities of people and autonomous agents on the Web. For this purpose, HyperAgents defines a new class of multi-agent systems (MAS) that use hypermedia as a general mechanism for uniform interaction.
 * **[RoboCup Rescue Simulation League](https://rescuesim.robocup.org){:target="_blank"}** (RoboCup Federation) <br/>
 The RoboCup Rescue Simulation League is an education and research project that promotes research and development in the socially significant domain of natural disaster. The RoboCup Rescue Simulator aims to realistically represent natural disaster scenarios where response plans can be assessed.
-
-# Concluded
-
 * **[Web-based Simulation for Science and Education](https://sim4edu.com/){:target="_blank"}** (Brandenburg University of Technology)
 * **Theory, practice, and social aspects of reproducible science** (University of Idaho) <br/>
 Reproducibility of research findings is a pillar of science. Lately, however, many scientific disciplines have failed to reproduce their major research findings. The scientific community has recognized nonreproducibility as a symptom of systematic problems in current scientific practice. This recognition has triggered a shift toward revised research practices that will presumably fix the problem. However, a theory of nonreproducibility to inform such efforts is lacking. Our project aims to advance a theory of nonreproducibility and to promote the practice of reproducible research which will have immediate practical impact through revised research practices at academia, governmental organizations, and industry starting with the UI community. We plan to achieve these aims via novel research, education, and outreach. Research-wise, we will use statistical theory and agent-based modeling to understand the drivers of nonreproducibility and study how the dynamics of scientific community affect this problem. Expected outcomes are two manuscripts and a national grant proposal. Education-wise, we aim to develop a graduate seminar to train graduate students in sound research practices. We will also develop an interactive web app and a website as educational tools. Outreach-wise, we will conduct a workshop to facilitate collaboration on meta-research and disseminate information to state and federal agencies.
