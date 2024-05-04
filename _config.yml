@@ -19,6 +19,8 @@ url        : "https://gnardin.github.io"
 baseurl    : "/website"
 locale     : "en_US"
 
+repository: "gnardin/website"
+
 atom_feed:
   hide: true
 breadcrumbs: false
