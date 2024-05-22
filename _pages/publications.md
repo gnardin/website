@@ -15,8 +15,9 @@ permalink: /publications/
 
 # Books
 
+| **Nardin, L. G.** & Mehryar, S. (Eds.) (2024). _Multi-Agent-Based Simulation XXIV: 24th International Workshop, MABS 2023, London, UK, May 29 – June 2, 2023, Revised Selected Papers_. Cham: Springer, Lecture Notes in Computer Science v.14558. doi: [10.1007/978-3-031-61034-9](https://doi.org/10.1007/978-3-031-61034-9){:target="_blank"}. | [](../data/books/nardinMehryar2024-book.bib){:class="fas fa-book"}{:target="_blank"} | |
 | Deutschmann, E., Lorenz, J., **Nardin, L. G.**, Natalini, D., & Wilhelm, A. F. X. (Eds.). (2020). _Computational Conflict Research_. Cham: Springer, Computational Social Sciences Book Series. doi: [10.1007/978-3-030-29333-8](https://doi.org/10.1007/978-3-030-29333-8){:target="_blank"}. | [](../data/books/deutschmannEtAl2020-book.bib){:class="fas fa-book"}{:target="_blank"} | [](https://link.springer.com/content/pdf/10.1007/978-3-030-29333-8.pdf){:class="fas fa-file-pdf"}{:target="_blank"} |
-| **Nardin, L. G.** & Antunes, L. (Eds.). (2017). _Multi-Agent Based Simulation XVII: International Workshop, MABS 2016, Singapore, Singapore, May 10, 2016, Revised Selected Papers_. Cham: Springer, Lecture Notes on Computer Science v. 10399. doi: [10.1007/978-3-319-67477-3](https://doi.org/10.1007/978-3-319-67477-3){:target="_blank"}. | [](../data/books/nardinAntunes2017-book.bib){:class="fas fa-book"}{:target="_blank"} | |
+| **Nardin, L. G.** & Antunes, L. (Eds.). (2017). _Multi-Agent Based Simulation XVII: International Workshop, MABS 2016, Singapore, Singapore, May 10, 2016, Revised Selected Papers_. Cham: Springer, Lecture Notes on Computer Science v.10399. doi: [10.1007/978-3-319-67477-3](https://doi.org/10.1007/978-3-319-67477-3){:target="_blank"}. | [](../data/books/nardinAntunes2017-book.bib){:class="fas fa-book"}{:target="_blank"} | |
 
 # Journals
 
