@@ -90,6 +90,7 @@ permalink: /publications/
 
 # Presentations
 
+| **Nardin, L. G.** (2023). Regulated MAS for Sociotechnical Systems. _2023 Workshop-School on Agents, Environments, and Applications_. Pelotas, Brazil. | | [](../data/conferences/presentations/nardin2023-wesaac.pdf){:class="fas fa-file-pdf"}{:target="_blank"} |
 | Farshid, F. & **Nardin, L. G.** (2021). RoboCup Rescue Simulation. _HNPW 2021 Humanitarian Network Partnership Week_. Online. [https://youtu.be/nPUuU8ldYhs](https://youtu.be/nPUuU8ldYhs){:target="_blank"} | | |
 | **Nardin, L. G.** (2020). Bridging the gap between discrete-event and agent-based simulation. _II Workshop em Modelagem e Simulação de Sistemas Intensivos em Software_. Natal, Brazil. | | [](../data/conferences/presentations/nardin2020-mssis.pdf){:class="fas fa-file-pdf"}{:target="_blank"} |
 | Duffy, F., Klosek, K., **Nardin, L. G.**, & Wagner, G. (2018). Rebel Groups Protection Rackets: Simulating the effects of economic support on civil war violence. _CoMSES 2018 Virtual Conference_. Online. [https://youtu.be/77YBasckAaM](https://youtu.be/77YBasckAaM){:target="_blank"} | | |
